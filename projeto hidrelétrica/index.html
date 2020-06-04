@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>E&C Instalações project</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet">
+    <meta http-equiv="Content-Language" content="pt-br">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="font-sans bg-gray-200">
+    <nav class="flex items-center justify-between flex-wrap bg-blue-800 p-6 w-full top-0 z-10">
+        <div class="flex items-center text-center text-white mr-6">
+            <a class="text-white hover:text-white text-2xl pl-2 " href="#">E&C Instalações Hidráulicas e Elétricas</a>
+        </div>
+        <div class="block lg:hidden mx-auto mt-4 md:mx-px md:mt-0">
+            <button id="nav-toggle" class="flex px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+            </button>
+        </div>
+        <div id="nav-content" class="w-full flex-grow text-center md:text-left lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0">
+            <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                <li class="mr-3">
+                    <a class="inline-block py-2 px-4 text-white no-underline" href="#">Home</a>
+                </li>
+                <li class="mr-3">
+                    <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">Sobre</a>
+                </li>
+                <li class="mr-3">
+                    <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <script>
+        //Javascript to toggle the menu
+        document.getElementById('nav-toggle').onclick = function() {
+            document.getElementById("nav-content").classList.toggle("hidden");
+        }
+        </script>
+    </nav>
+    <!--Carousel (Protótipo)-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
+    <script src="scripts.js"></script>
+    <div class="sliderAx h-auto ">
+        <div id="slider-1" class=" relative overflow-hidden w-full">
+            <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill" style="background-image: url(https://www.ett-lighting.com/wp-content/uploads/2019/06/electrical-1.jpg);">
+                <div class="md:w-1/2">
+                    <p class="font-bold text-sm uppercase">Services</p>
+                    <p class="text-3xl font-bold">Hello world</p>
+                    <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
+                    <a href="#" class="bg-blue-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
+                </div>
+            </div> <!-- container -->
+            <br>
+        </div>
+        <div id="slider-2" class=" relative overflow-hidden w-full">
+            <div class="bg-cover bg-top  h-auto text-white py-24 px-10 object-fill" style="background-image: url(https://linkheatingandplumbing.co.uk/wp-content/uploads/2018/09/Untitled-design-3.jpg)">
+                <p class="font-bold text-sm uppercase">Services</p>
+                <p class="text-3xl font-bold">Hello world</p>
+                <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
+                <a href="#" class="bg-blue-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
+            </div> <!-- container -->
+            <br>
+        </div>
+    </div>
+    <div class="flex justify-between w-12 mx-auto pb-2">
+        <button id="sButton1" onclick="sliderButton1()" class="bg-blue-400 rounded-full w-4 pb-2 "></button>
+        <button id="sButton2" onclick="sliderButton2() " class="bg-blue-400 rounded-full w-4 p-2"></button>
+    </div>
+</body>
+
+</html>
