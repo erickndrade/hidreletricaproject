@@ -36,7 +36,7 @@
             </ul>
         </div>
         <script>
-        //Javascript to toggle the menu
+            //Javascript to toggle the menu
         document.getElementById('nav-toggle').onclick = function() {
             document.getElementById("nav-content").classList.toggle("hidden");
         }
@@ -45,25 +45,25 @@
     <!--Carousel (Protótipo)-->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
-    <script src="scripts.js"></script>
-    <div class="sliderAx h-auto ">
-        <div id="slider-1" class=" relative overflow-hidden w-full">
-            <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill" style="background-image: url(https://www.ett-lighting.com/wp-content/uploads/2019/06/electrical-1.jpg);">
-                <div class="md:w-1/2">
-                    <p class="font-bold text-sm uppercase">Services</p>
-                    <p class="text-3xl font-bold">Hello world</p>
-                    <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
-                    <a href="#" class="bg-blue-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
+    <script src="js/scripts.js"></script>
+    <div class="sliderAx h-auto">
+        <div id="slider-1" class="relative overflow-hidden w-full">
+            <div class="bg-cover bg-center text-center md:text-left h-auto text-white py-24 px-10 object-fill" style="background-image: url(img/electrical-1.jpg);">
+                <div class="">
+                    <p class="font-bold text-sm uppercase">Serviços</p>
+                    <p class="text-3xl font-bold">Elétricos</p>
+                    <p class="text-2xl mb-10 leading-none">Instalações prediais, residenciais e comerciais.</p>
+                    <a href="#" class="bg-blue-800 py-4 px-6 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Nos Contate</a>
                 </div>
             </div> <!-- container -->
             <br>
         </div>
-        <div id="slider-2" class=" relative overflow-hidden w-full">
-            <div class="bg-cover bg-top  h-auto text-white py-24 px-10 object-fill" style="background-image: url(https://linkheatingandplumbing.co.uk/wp-content/uploads/2018/09/Untitled-design-3.jpg)">
-                <p class="font-bold text-sm uppercase">Services</p>
-                <p class="text-3xl font-bold">Hello world</p>
-                <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
-                <a href="#" class="bg-blue-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact us</a>
+        <div id="slider-2" class="relative overflow-hidden w-full">
+            <div class="bg-cover bg-top text-center md:text-left h-auto text-white py-24 px-10 object-fill" style="background-image: url(img/Untitled-design-3.jpg)">
+                <p class="font-bold text-sm uppercase">Serviços</p>
+                <p class="text-3xl font-bold">Hidráulicos</p>
+                <p class="text-2xl mb-10 leading-none">Instalações prediais, residenciais e comerciais.</p>
+                <a href="#" class="bg-blue-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Nos Contate</a>
             </div> <!-- container -->
             <br>
         </div>
@@ -72,6 +72,41 @@
         <button id="sButton1" onclick="sliderButton1()" class="bg-blue-400 rounded-full w-4 pb-2 "></button>
         <button id="sButton2" onclick="sliderButton2() " class="bg-blue-400 rounded-full w-4 p-2"></button>
     </div>
+    <section class="my-8 mr-6 font-sans container md:mx-auto flex flex-col md:flex-row sm:items-center text-center md:text-left">
+        <div class="w-full md:w-1/2 flex flex-col justify-center items-start px-6 py-0 md:py-8 md:px-8 lg:items-start">
+            <label for="tagline" class="uppercase text-center md:text-left tracking-wide text-gray-700 font-bold">various aspects</label>
+            <h1 class="mt-2 mb-4 font-medium">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h1>
+            <p class="leading-normal mb-4 text-gray-700">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+                Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+                Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</p>
+        </div>
+        <div class="w-full md:w-1/2 flex-row md:flex-col justify-between md:justify-center items-center p-2 md:p-8 items-center md:items-start">
+            <div class="flex items-center sm:border-r md:border-b md:border-r-0 md:p-4  md:w-auto">
+                <div class="mr-4" alt="Avatar of Jonathan Reinink"></div>
+                <div class="">
+                    <h2 class="text-black font-medium">Aliquam tincidunt mauris eu risus.</h2>
+                    <p class="text-gray-700 leading-normal mb-6 md:mb-0">Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+                </div>
+            </div>
+            <div class="flex items-center md:p-4 md:w-auto">
+                <div class="w-14 h-14 rounded-full mr-4 bg-gray-300" alt="Avatar of Jonathan Reinink"></div>
+                <div class="">
+                    <h2 class="text-black font-medium">Vestibulum auctor dapibus neque.</h2>
+                    <p class="text-gray-700 leading-normal">Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="px-10 antialiased font-sans w-full bg-gray-300 text-center md:text-left text-black py-8">
+        <div class="container  py-8 font-normal leading-normal">
+            <h3 class="text-2xl">Grow Your Business</h3>
+            <p class="">Build high performing teams, establish design practices, mentor and grow the next generation of great designers, and design interfaces and experiences.</p>
+            <div class="max-w-sm mt-4 sm:flex">
+                <input type="email" class="block w-full focus:outline-0 bg-white py-3 px-6 mb-2 sm:mb-0" name="email" placeholder="Enter your email" required="">
+                <button class="uppercase text-sm text-white focus:outline-0 w-full sm:w-auto bg-black hover:bg-blue-800 focus:bg-gray-300 tracking-wide px-6">Subscribe</button>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
